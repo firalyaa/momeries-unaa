@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>kenangan selama magang</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+<!-- HALAMAN KODE RAHASIA -->
+<div class="lock-screen" id="lockScreen">
+    <div class="lock-card">
+
+        <div class="lock-decoration">♡ 🎀 ♡</div>
+
+        <div class="lock-character">🐧</div>
+
+        <h1>Hi, unaaa! ♡</h1>
+
+        <p>
+            Ada sedikit kejutan untuk kamu!
+            Masukkan kode rahasia untuk membuka kenangan ini.
+        </p>
+
+        <input
+            type="password"
+            id="secretCode"
+            placeholder="Masukkan kode rahasia..."
+        >
+
+        <button type="button" onclick="checkCode()">
+            OPEN MY LETTER ♡
+        </button>
+
+        <p id="errorMessage" class="error-message"></p>
+
+        <div class="lock-footer">
+            A little memory made just for you ♡
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="container" id="mainContent" style="display: none;"> 
+
+        <h1>kenangan selama magang 💗</h1>
+
+        <p class="subtitle">
+            terima kasih sudah menjadi bagian dari cerita ini!
+            banyak kenangan indah yang akan selalu diingat ♡
+        </p>
+
+<!-- Tempat sticky note ditampilkan -->
+<div class="notes-container" id="notesContainer"></div>
+
+<!-- ALBUM KENANGAN -->
+
+<div class="memory-section">
+    <h2>Our Little Memories ♡</h2>
+
+    <div class="photo-gallery">
+        <img class="portrait" src="media/foto1.jpeg" alt="Foto 1">
+
+        <div class="landscape-group">
+            <img src="media/foto2.jpeg" alt="Foto 2">
+            <img src="media/foto3.jpeg" alt="Foto 3">
+        </div>
+
+        <img class="portrait" src="media/foto4.jpeg" alt="Foto 4">
+    </div>
+
+
+<div class="video-wrapper">
+    <video class="memory-video" id="memoryVideo" autoplay muted loop playsinline>
+        <source src="media/video1.mp4" type="video/mp4">
+    </video>
+
+    <button class="sound-button" onclick="playWithSound()">
+        ♡ Putar dengan Suara ♡
+    </button>
+</div>
+
+
+    <p class="media-caption">Little moments, big memories ♡</p>
+</div>
+
+<footer>
+    Made with love ♡ Our Internship Memories
+</footer>
+
+    <!-- Popup pesan -->
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeMessage()">&times;</span>
+
+            <div class="character" id="modalCharacter"></div>
+
+            <h2 id="modalName"></h2>
+
+            <p id="modalMessage"></p>
+
+            <div class="nav-buttons">
+                <button class="back-button" onclick="backToMenu()">
+                    ← Kembali ke Menu
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+<!-- MUSIK BACKGROUND -->
+<audio id="backgroundMusic" loop>
+    <source src="media/purple.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-button" onclick="toggleMusic()">
+    ♡ Putar Musik ♡
+</button>
+
+<script src="script.js" defer></script>
+</body>
+</html>
